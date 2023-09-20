@@ -1,3 +1,24 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/python:3.8"
+    "image": "mcr.microsoft.com/devcontainers/python:3.8",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/azure-cli:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/terraform:1": {}
+    },
+    //"postCreateCommand": "",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.sublime-keybindings",
+                "emmanuelbeziat.vscode-great-icons",
+                "ms-python.python",
+                "KevinRose.vsc-python-indent",
+                "ms-python.vscode-pylance",
+                "edhat.vscode-yaml",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
 }
